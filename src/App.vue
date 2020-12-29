@@ -1,27 +1,39 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="flex flex-col">
+    <app-header></app-header>
+    <div class="relative flex-grow" style="margin-top: 100px;">
+      <div
+        class="menu-overlay absolute bg-black w-full h-full z-50 top-0 left-0"
+        :class="{active: showMenu}"
+      ></div>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import {mapGetters} from "vuex";
+import AppHeader from './components/AppHeader'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    AppHeader
+  },
+  computed: {
+    ...mapGetters('app', ['showMenu']),
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  .menu-overlay {
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+  }
+
+  .active {
+    visibility: visible;
+    opacity: 0.6;
+  }
 </style>

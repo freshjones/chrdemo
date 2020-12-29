@@ -1,0 +1,7 @@
+html {
+	overflow-y: scroll !important;
+}
+
+html, body {
+    height:100%;
+}
