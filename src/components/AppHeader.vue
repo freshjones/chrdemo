@@ -1,7 +1,6 @@
 <template>
     <header
-        class="header"
-        :class="{ scrolling: scrolling == true }"
+        class="header border-b-2 border-chrblue-300"
     >
         <div class="container mx-auto">
             <div class="flex">
@@ -98,6 +97,7 @@
         z-index: 90;
         top: 0;
         width: 100%;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
     }
 
     .scrolling {

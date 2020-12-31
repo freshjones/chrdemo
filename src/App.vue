@@ -8,16 +8,19 @@
       ></div>
       <router-view></router-view>
     </div>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import {mapGetters} from "vuex";
 import AppHeader from './components/AppHeader'
+import AppFooter from './components/AppFooter'
 
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   },
   computed: {
     ...mapGetters('app', ['showMenu']),
