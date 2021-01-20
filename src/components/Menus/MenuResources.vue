@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center">
+    <div class="flex justify-center bg-chr-accent-orange text-white">
         <div class="flex p-5 text-xs">
             <ul class="mx-7">
                 <li class="py-1 font-bold">Knowledge &amp; Resources</li>

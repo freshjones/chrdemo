@@ -1,6 +1,7 @@
 <template>
     <header
-        class="header border-b-2 border-chrblue-300"
+        class="header border-b-4 "
+        :class="`border-chr-accent-${getAccent}`"
     >
         <div class="container mx-auto">
             <div class="flex">
@@ -67,7 +68,8 @@
         },
         computed: {
             ...mapGetters('app', {
-                menuActive: 'showMenu'
+                menuActive: 'showMenu',
+                getAccent: 'getAccent'
             }),
             currentMenu: function() {
                 return "menu-" + this.menuActive;

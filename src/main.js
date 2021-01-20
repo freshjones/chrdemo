@@ -8,6 +8,7 @@ import './assets/fonts.css'
 import './assets/tailwind.css'
 import './assets/app.css'
 import router from './router'
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faSearch,

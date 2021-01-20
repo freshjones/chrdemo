@@ -1,8 +1,10 @@
 <template>
-    <div class="flex justify-center">
+    <div class="flex justify-center bg-chr-accent-ltblue text-white">
         <div class="flex p-5 text-xs">
             <ul class="mx-7">
-                <li class="py-1 mb-5 font-bold">Life Science, Healthcare &amp; Biophotonics</li>
+                <li class="py-1 mb-5 font-bold">
+                    <router-link :to="{ name: 'life-science'}">Life Science, Healthcare &amp; Biophotonics</router-link>
+                </li>
                 <li class="py-1 mb-5 font-bold">Food, Agriculture, &amp; Ecology</li>
                 <li class="py-1 font-bold">Inspection &amp; Measurement</li>
             </ul>

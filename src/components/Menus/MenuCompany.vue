@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center">
+    <div class="flex justify-center bg-chr-accent-green text-white">
         <div class="flex p-5 text-xs">
             <ul class="mx-7">
                 <li class="py-1 mb-5 font-bold">About Us</li>
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+
     export default {
 
     }

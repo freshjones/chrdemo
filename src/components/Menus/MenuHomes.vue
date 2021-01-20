@@ -14,6 +14,15 @@
                 <li class="py-1">
                     <router-link :to="{ name: 'home4'}">Homepage 4</router-link>
                 </li>
+                <li class="py-1">
+                    <router-link :to="{ name: 'home5'}">Homepage 5</router-link>
+                </li>
+                <li class="py-1">
+                    <router-link :to="{ name: 'home6'}">Homepage 6</router-link>
+                </li>
+                <li class="py-1">
+                    <router-link :to="{ name: 'home7'}">Homepage 7</router-link>
+                </li>
             </ul>
         </div>
     </div>

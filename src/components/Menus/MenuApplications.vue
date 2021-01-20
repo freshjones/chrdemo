@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center">
+    <div class="flex justify-center bg-chr-accent-blue text-white">
         <div class="flex p-5 text-xs">
             <ul class="mx-7">
                 <li class="py-1 mb-5 font-bold">Fluorescence Microscopy</li>
@@ -26,8 +26,11 @@
 </template>
 
 <script>
+    import {mapGetters} from "vuex";
     export default {
-
+        computed: {
+            ...mapGetters('app', ['getAccent']),
+        }
     }
 </script>
 

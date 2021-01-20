@@ -1,6 +1,7 @@
 <template>
     <div
         class="px-2 cursor-pointer flex items-center"
+        :class="active"
         @mouseenter="showMenu"
         @mouseleave="clearMenu"
         @click="goToLink"
@@ -26,6 +27,9 @@
             },
             subnav: {
                 default: false
+            },
+            active: {
+                default: ''
             }
         },
         methods: {
@@ -36,6 +40,7 @@
                 }
             },
             goToLink() {
+
                 if(this.$route.name != this.route) {
                     this.$router.push({ name: this.route });
                 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero-slider></hero-slider>
+    <hero-slider-alt-2></hero-slider-alt-2>
     <div class="container mx-auto relative z-20">
       <div></div>
       <div class="flex justify-center">
@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import HeroSlider from './HeroSlider'
+import HeroSliderAlt2 from './HeroSliderAlt2'
 export default {
   components: {
-    HeroSlider
+    HeroSliderAlt2
   }
 }
 </script>
